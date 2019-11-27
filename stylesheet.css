@@ -1,0 +1,99 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #f8fff0; 
+	font-family: sans-serif;
+	width: 95%;
+	margin: 5% auto;
+}
+table
+{
+	width: 100%;
+	border-spacing: 0;
+}
+h1, th
+{
+	color: #46ada1;
+}
+caption
+{
+	font-size: 2rem;
+	padding: 2%;
+}
+th
+{
+	padding: .5%;
+}
+tr:nth-child(even)
+{
+	background-color: #dfe5da;
+}
+tr:nth-child(odd)
+{
+	background-color: #babeb5;
+}
+tr:nth-of-type(1)
+{
+	background: none;
+	text-align: left;
+}
+td
+{
+	padding: .5%;
+}
+a
+{
+	text-decoration: none;
+	color: #956b66;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+div
+{
+	text-align: right;
+	margin right: 2%;
+}
+.cmd
+{
+	color: #46ada1;
+	font-weight: bolder;
+}
+.caption
+{
+	border-top: 1px solid black;
+	padding-top: 2%;
+	text-align: center;
+}
+p:nth-of-type(1)
+{
+	font-weight: bolder;
+}
+section
+{
+	border: 1px solid black;
+	padding: 1%;
+	width: 18%;
+	text-align: center;
+	margin-top: 2%;
+}
+.flex
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.h2
+{
+	margin-top: 5%;
+}
+input
+{
+	outline-color: #46ada1;
+}

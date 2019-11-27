@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8">
+	<title>Liste des commandes</title>
+</head>
+<body>
+	<h1>Bons de commandes</h1>
+	<a href="index.php">Retour à l'accueil</a>
+	<div>
+		<h2><?php echo $result_customer[0][0] ?></h2>
+		<p><?php echo $result_customer[0][1]; echo $result_customer[0][2] ?></p>
+		<p><?php echo $result_customer[0][3]; echo $result_customer[0][4] ?></p>
+		<p><?php echo $result_customer[0][5] ?></p>
+	</div>
+	<table>
+		<caption class="caption">Bon de commande n°<?php echo $id ?></caption>
+		<tr>
+			<th>Produit</th>
+			<th>Prix Unitaire</th>
+			<th>Quantité</th>
+			<th>Prix Total</th>
+		</tr>
+		<?php foreach ($result_product as $key => $value) { ?>
+		<tr>
+			<td><?php echo $value[1] ?></td>
+			<td><?php echo $value[2] ?>$</td>
+			<td><?php echo $value[3] ?></td>
+			<td><?php echo $value[4] ?>$</td>
+		</tr>
+		<?php } ?>
+		<tr>
+			<td></td>
+			<td></td>
+			<td class="cmd">Montant Total HT</td>
+			<td class="cmd"><?php echo $result_montant[0][1] ?>$</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td class="cmd">TVA (20%)</td>
+			<td class="cmd"><?php echo $result_montant[0][2] ?>$</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td class="cmd">Montant Total TTC</td>
+			<td class="cmd"><?php echo $result_montant[0][3] ?>$ </td>
+		</tr>
+	</table>
+</body>
+</html>
